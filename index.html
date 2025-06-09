@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Malick</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9; 
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 1rem;
+        }
+        .card-content h3 {
+            margin: 0 0 1rem;
+        }
+        .card-content p {
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #222;
+            color: white;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio de Malick</h1>
+        <p>Étudiant en ingénierie, passionné par l'analyse des données</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Mes projets</h2>
+            <div class="projects">
+                <!-- Carte 1 -->
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/OP1h-ZpnsAs/maxresdefault.jpg" alt="Projet Evalbot">
+                    <div class="card-content">
+                        <h3>Robot Evalbot</h3>
+                        <p>Programmation d’un robot autonome en utilisant un microcontrôleur.</p>
+                        <a href="Présentation_Projet_G1d06_IGI_3001.pdf" target="_blank">Présentation du projet</a>
+                        <a href="Rapport-Projet-G1d06-IGI-3001.pdf" target="_blank">Rapport du projet</a>
+                    </div>
+                </div>
+                <!-- Carte 2 -->
+                <div class="card">
+                    <img src="https://viragemedia.fr/wp-content/uploads/2019/11/comment-etablir-un-budget-publicitaire-annuel--768x511.jpg" alt="TIPE Tennis">
+                    <div class="card-content">
+                        <h3>Dévelopement d'un outil de gestion budgétaire(En cours)</h3>
+                        <p>Statistiques des transactions, visualisation des graphiques, création d'une interface graphique .</p>
+                        <a href="https://github.com/malickda" target="_blank">Code</a>
+                    </div>
+                </div>
+                <!-- Carte 3 -->
+                <div class="card">
+                    <img src="https://www.styrel.fr/sites/default/files/python-langage-code.jpg" alt="Jeu Textuel">
+                    <div class="card-content">
+                        <h3>Développement d'un jeu textuel interactif</h3>
+                        <p>Création d'objets, de personnages, d'attributs et de méthodes. Création d'un scénario dans lequel les personnages interagissent.</p>
+                        <a href="https://github.com/Gidaxe/TBA" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <!-- Carte 4 -->
+                <div class="card">
+                    <img src="https://thafd.bing.com/th/id/OIP.wZ37T16u-aal0BzfSPCk3AHaFj?cb=iwp1&rs=1&pid=ImgDetMain" alt="Sections Internationales">
+                    <div class="card-content">
+                        <h3>Analyse des Sections Internationales et BFI</h3>
+                        <p>nettoyage et analyse une base de données issue de l’Éducation Nationale sur les sections internationales et BFI, afin d’en extraire des tendances géographiques et linguistiques.</p>
+                        <a href="Projet BDD.pdf" target="_blank">Présentation du projet</a>
+                        <a href="Rapport_Projet_BDD_Sections_Internationales.docx.pdf" target="_blank">Rapport du projet</a>
+                    </div>
+                </div>
+                <!-- Carte 5 -->
+                <div class="card">
+                    <img src="https://www.bing.com/images/search?view=detailV2&ccid=9RZhAivD&id=C01301917CDD7ED98407D711EF94A6C196038898&thid=OIP.9RZhAivDJvp_LljlWknLBgHaFd&mediaurl=https%3a%2f%2fstatic1.bigstockphoto.com%2f7%2f8%2f3%2flarge1500%2f387256483.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.f51661022bc326fa7f2e58e55a49cb06%3frik%3dmIgDlsGmlO8R1w%26pid%3dImgRaw%26r%3d0&exph=1106&expw=1500&q=photo+finance&simid=608034926302339009&FORM=IRPRST&ck=B1C88A15BED36AB2B6BCE6B89287CBD2&selectedIndex=6&itb=0" alt="Sections Internationales">
+                    <div class="card-content">
+                        <h3>Dashboard suivi des risques fianciers</h3>
+                        <p>Collecte des données boursières (API yfinance), nettoyage avec Pandas, calcul des métriques clés (volatilité, rendement, VaR) et visualisation du couple risque/rendement dans Power BI.</p>
+                        <a href="https://github.com/malickda" target="_blank">Code</a>
+                        <a href="dashboard.png" target="_blank">Image du dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> 
+
+    <footer>
+        <p>Contactez-moi : <a href="mailto:aboubakarmalick.djire@edu.esiee.fr">aboubakarmalick.djire@edu.esiee.fr</a></p>
+        <p><a href="http://linkedin.com/in/aboubakar-malick-djiré-3ba406259">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
